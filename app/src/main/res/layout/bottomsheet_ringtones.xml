@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="23dp"
+    android:paddingEnd="20dp"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Alarm Ringtone"
+            android:textSize="19sp"
+            android:textColor="#2C343C"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium" />
+
+        <ImageView
+            android:id="@+id/saveBtn"
+            android:layout_width="23dp"
+            android:layout_height="28dp"
+            android:src="@drawable/save_days"
+            app:tint="#FD251E"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Old Fashioned Alarm"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/days_background"
+            android:textStyle="bold"
+            android:checked="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:paddingStart="7dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Revielle Loud"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/days_background"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:paddingStart="7dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobutton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ringtone New Viral"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/days_background"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:paddingStart="7dp"
+            />
+
+    </RadioGroup>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

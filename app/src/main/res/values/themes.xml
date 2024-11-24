@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WakeUp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@drawable/splash_background_gradient</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomTimePickerTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:textColorPrimary">#C1C6CA</item> <!-- Pour le texte actuel -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D1D4D7</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColorSecondary">#FD251E</item> <!-- Pour le texte des éléments précédents et suivants -->
+    </style>
+
+    <style name="Theme.WakeUp" parent="Base.Theme.WakeUp" />
+</resources>
