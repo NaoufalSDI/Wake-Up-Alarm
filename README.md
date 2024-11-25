@@ -4,7 +4,6 @@ Le projet **"Wake Up"** est une application Android intuitive permettant aux uti
 configurer, personnaliser et gérer leurs alarmes. L'application offre une interface simple et moderne 
 pour définir l'heure, les jours de répétition, et choisir une sonnerie parmi une sélection.
 
-![wake up screens (1)](https://github.com/user-attachments/assets/c84a937f-35f9-4b03-8cbf-3d75805c8dba)
 ## ***🔧 Fonctionnalités principales :***
 
 - **⏰ Configuration de l'heure** : Définissez facilement l'heure et les minutes de votre alarme.
@@ -26,6 +25,10 @@ Les principales dépendances de ce projet incluent :
 - **🎛️ Activities** : `EditAlarmActivity` pour l'édition des alarmes et `MainActivity` pour la gestion des alarmes actives.
 - **🔲 Interfaces Utilisateur** : Utilisation de `ConstraintLayout` et `BottomSheet` pour une interface fluide et esthétique.
 - **⏰ Gestion des alarmes** : Utilisation de l'API `AlarmManager` pour la planification des alarmes.
+
+## **🖼️ Aperçu de l'application**
+
+![wake up screens (1)](https://github.com/user-attachments/assets/c84a937f-35f9-4b03-8cbf-3d75805c8dba)
 
 ## 🙏 **Remerciements**
 
