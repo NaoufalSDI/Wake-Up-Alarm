@@ -1,6 +1,7 @@
 package com.example.wakeup
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
@@ -27,6 +28,7 @@ class EditAlarmActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         setContentView(R.layout.activity_edit_alarm)
 
         configureSystemBars()
@@ -141,6 +143,7 @@ class EditAlarmActivity : AppCompatActivity() {
         bottomSheetView.findViewById<ImageView>(R.id.saveBtn).setOnClickListener {
             selectedDaysState.clear()
             checkBoxes.forEach { (checkboxId, day) ->
+
                 if (bottomSheetView.findViewById<CheckBox>(checkboxId).isChecked) {
                     selectedDaysState.add(day)
                 }
@@ -171,7 +174,8 @@ class EditAlarmActivity : AppCompatActivity() {
         val ringtoneMap = mapOf(
             R.id.radiobutton1 to "old_fashioned_alarm",
             R.id.radiobutton2 to "reveille_loud",
-            R.id.radiobutton3 to "ringtone_new_viral"
+            R.id.radiobutton3 to "ringtone_new_viral",
+            R.id.radiobutton4 to "police_alarm"
         )
 
         ringtoneMap.forEach { (id, ringtone) ->

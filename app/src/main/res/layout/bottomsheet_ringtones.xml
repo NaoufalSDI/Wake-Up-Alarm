@@ -81,6 +81,20 @@
             android:paddingStart="7dp"
             />
 
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobutton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Police Alarm"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/days_background"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:paddingStart="7dp"
+            />
+
     </RadioGroup>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

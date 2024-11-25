@@ -40,6 +40,7 @@ class AlarmReceiver : BroadcastReceiver() {
             "old_fashioned_alarm" -> Uri.parse("android.resource://${context.packageName}/raw/old_fashioned_alarm")
             "reveille_loud" -> Uri.parse("android.resource://${context.packageName}/raw/reveille_loud")
             "ringtone_new_viral" -> Uri.parse("android.resource://${context.packageName}/raw/ringtone_new_viral")
+            "police_alarm" -> Uri.parse("android.resource://${context.packageName}/raw/police_alarm")
             else -> RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM)
         }
 
